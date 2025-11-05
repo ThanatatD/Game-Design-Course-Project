@@ -100,6 +100,8 @@ namespace Controllers
                 SoundManager.Instance.PlaySound(0);
                 _rb.Jump();
                 _isJumped = false;
+
+                _health.TakeDirectDamage(5);  // reduce 
             }
         }
 
