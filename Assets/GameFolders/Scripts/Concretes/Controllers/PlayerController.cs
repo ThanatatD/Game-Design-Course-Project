@@ -155,8 +155,8 @@ namespace Inputs
         }
 
         public bool IsJumpButtonDown => Input.GetKeyDown(KeyCode.W);
-        public bool IsJumpButton => Input.GetKey(KeyCode.W);
-        public bool IsDownButton => Input.GetKey(KeyCode.S);
+        public bool IsJumpButton => Input.GetKeyDown(KeyCode.W);   // if want long press jump, change this to GetKey
+        public bool IsDownButton => Input.GetKey(KeyCode.S);  // not work and not use yet
         public bool IsInteractButton => Input.GetKeyDown(KeyCode.Space);
         public bool IsExitButton => Input.GetKeyDown(KeyCode.Escape);
     }
@@ -178,11 +178,16 @@ namespace Inputs
         }
 
         public bool IsJumpButtonDown => Input.GetKeyDown(KeyCode.UpArrow);
-        public bool IsJumpButton => Input.GetKey(KeyCode.UpArrow);
-        public bool IsDownButton => Input.GetKey(KeyCode.DownArrow);
+        public bool IsJumpButton => Input.GetKeyDown(KeyCode.UpArrow);  // if want long press jump, change this to GetKey
+        public bool IsDownButton => Input.GetKey(KeyCode.DownArrow);   // not work and not use yet
         public bool IsInteractButton => Input.GetKeyDown(KeyCode.Space);
         public bool IsExitButton => Input.GetKeyDown(KeyCode.Return);
     }
 }
 
-// Not use PcInput class anymore (I already comment that out in PcInput.cs)
+// // Not use PcInput class anymore (I already comment that out in PcInput.cs)
+// // Now Playeres can do multiple jump and make them fly (cuz now i change playerxplayer off and make it only foreground collision, also the collision now is in foreground layer)
+// // if want to fix this, make it to be player layer and allow player x player collision again and also add player at foreground ground check ... (but this will cuz some flicker error smth)
+
+
+// now some item enenemy not work and not follow player 2. (not do this yet)

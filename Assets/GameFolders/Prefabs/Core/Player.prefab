@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fc94e4b0ad9a140939821fc3d5ee11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpForce: 7
+  _jumpForce: 9
   _horizontalSpeed: 5.6
 --- !u!114 &2228349935118738269
 MonoBehaviour:
@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 2228349935736158059}
   - component: {fileID: 2228349935736158056}
   - component: {fileID: 8223846165117771491}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -480,8 +480,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.028385162, y: -0.1825782}
-  m_Size: {x: 1.26198, y: 1.26198}
+  m_Offset: {x: 0.018864632, y: -0.26635808}
+  m_Size: {x: 1.3648005, y: 1.4600052}
   m_Direction: 0
 --- !u!1 &2228349936336114180
 GameObject:
