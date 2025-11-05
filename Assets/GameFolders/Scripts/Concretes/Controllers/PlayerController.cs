@@ -8,6 +8,7 @@ using Animations;
 using Mechanics;
 using Managers;
 using System;
+using Combat;
 
 namespace Controllers
 {
@@ -29,6 +30,9 @@ namespace Controllers
         InteractHandler _interact;
         private bool _isPaused;
 
+        private Health _health;  //
+        private Damage _damage;  //
+
         private void Awake()
         {
             _rb = GetComponent<RbMovement>();
@@ -37,6 +41,9 @@ namespace Controllers
             _groundCheck = GetComponent<GroundCheck>();
             _platform = GetComponent<PlatformHandler>();
             _interact = GetComponent<InteractHandler>();
+
+            _health = GetComponent<Health>(); //
+            _damage = GetComponent<Damage>(); //
 
             // Choose input per player
             if (playerType == PlayerType.Player1)
@@ -100,8 +107,11 @@ namespace Controllers
                 SoundManager.Instance.PlaySound(0);
                 _rb.Jump();
                 _isJumped = false;
-
-                _health.TakeDirectDamage(5);  // reduce 
+            
+                if (_damage != null && _health != null)  // jump reduce own energy
+                {
+                    _damage.reduceEnergy(_health);
+                }
             }
         }
 

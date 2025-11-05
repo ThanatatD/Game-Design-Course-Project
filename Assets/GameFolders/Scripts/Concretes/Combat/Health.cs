@@ -139,6 +139,28 @@ namespace Combat
                 OnDead?.Invoke();
         }
 
+        public void reduceEnergy(Damage damage)   //same as takehit but without invulnerability and cooldown and sound effect
+        {
+            _currentHealth -= damage.HitDamage;
+            if (_currentHealth < 0) _currentHealth = 0;
+
+            OnHealthChanged?.Invoke();
+
+            // if (_IsCooldownAfterHit)
+            //     StartCoroutine(HitCooldown());
+
+            if (IsDead)
+                OnDead?.Invoke();
+        }
+
+        public void ModifyHealth(int amount)  //for transfer one
+        {
+            _currentHealth = Mathf.Clamp(_currentHealth + amount, 0, _maxHealth);
+            OnHealthChanged?.Invoke();
+            Debug.Log("Health modified by " + amount);
+        }
+
+
         IEnumerator HitCooldown()
         {
             _isInvulnerable = true;
