@@ -13,11 +13,11 @@ GameObject:
   - component: {fileID: 4770672626893111474}
   m_Layer: 8
   m_Name: TriggerExEnergy
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7396126267813204980
 Transform:
   m_ObjectHideFlags: 0
@@ -92,6 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactKey: 32
   transferAmount: 20
+  playerTag: TransferAllow
 --- !u!1 &2228349934544251117
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fc94e4b0ad9a140939821fc3d5ee11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpForce: 9
+  _jumpForce: 10
   _horizontalSpeed: 5.6
 --- !u!114 &2228349935118738269
 MonoBehaviour:

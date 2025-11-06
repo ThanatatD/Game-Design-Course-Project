@@ -8,6 +8,7 @@ TagManager:
   - InteractableObject
   - Trap
   - Box
+  - TransferAllow
   layers:
   - Default
   - TransparentFX
