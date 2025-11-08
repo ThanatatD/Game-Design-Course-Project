@@ -17,7 +17,7 @@ namespace Controllers
     public class PlayerController : MonoBehaviour
     {
         [Header("Player Settings")]
-        public PlayerType playerType = PlayerType.Player1;
+        public PlayerType playerType; // = PlayerType.Player1;
 
         bool _isJumped;
         float _horizontalAxis;
@@ -30,8 +30,8 @@ namespace Controllers
         InteractHandler _interact;
         private bool _isPaused;
 
-        private Health _health;  //
-        private Damage _damage;  //
+        private Energy _energy; //
+        public bool CanAcceptInput { get; set; } = true; // NEW: controls if input is accepted
 
         private void Awake()
         {
@@ -42,8 +42,7 @@ namespace Controllers
             _platform = GetComponent<PlatformHandler>();
             _interact = GetComponent<InteractHandler>();
 
-            _health = GetComponent<Health>(); //
-            _damage = GetComponent<Damage>(); //
+            _energy = GetComponent<Energy>(); //
 
             // Choose input per player
             if (playerType == PlayerType.Player1)
@@ -64,6 +63,12 @@ namespace Controllers
             GameManager.Instance.OnGameUnpaused -= HandleGameUnpaused;
         }
 
+        private void HandleEnergyChanged()
+        {
+            // Automatically enable input if energy > 0
+            CanAcceptInput = _energy.CurrentEnergy > 0;
+        }
+
         private void Update()
         {
             if (_input.IsExitButton)
@@ -77,21 +82,38 @@ namespace Controllers
 
             if (_isPaused) return;
 
-            _horizontalAxis = _input.HorizontalAxis;
+            // _horizontalAxis = _input.HorizontalAxis;
+            // Read input only if allowed
+            _horizontalAxis = CanAcceptInput ? _input.HorizontalAxis : 0f;
 
             if (_horizontalAxis != 0 && _groundCheck.IsOnGround)
                 SoundManager.Instance.PlaySound(1);
             else
                 SoundManager.Instance.StopSound(1);
 
-            if (_input.IsJumpButtonDown && _groundCheck.IsOnGround)
+            // if (_input.IsJumpButtonDown && _groundCheck.IsOnGround)
+            //     _isJumped = true;
+            if (_input.IsJumpButtonDown && _groundCheck.IsOnGround && CanAcceptInput)
                 _isJumped = true;
 
             if (_input.IsDownButton)
                 _platform.DisableCollider();
 
+            // Try energy share first (if player has Energy component)
+            bool didShare = false;
             if (_input.IsInteractButton)
-                _interact.Interact();
+            {
+                if (_energy != null)
+                {
+                    didShare = _energy.TryShareWithNearby();
+                }
+
+                // If share didn't happen, perform normal interact
+                if (!didShare)
+                {
+                    _interact.Interact();
+                }
+            }
 
             _anim.JumpAnFallAnim(_groundCheck.IsOnGround, _rb.VelocityY);
             _anim.HorizontalAnim(_horizontalAxis);
@@ -100,6 +122,7 @@ namespace Controllers
 
         private void FixedUpdate()
         {
+            // Horizontal movement respects CanAcceptInput
             _rb.HorizontalMove(_horizontalAxis);
 
             if (_isJumped)
@@ -107,11 +130,10 @@ namespace Controllers
                 SoundManager.Instance.PlaySound(0);
                 _rb.Jump();
                 _isJumped = false;
-            
-                if (_damage != null && _health != null)  // jump reduce own energy
-                {
-                    _damage.reduceEnergy(_health);
-                }
+
+                // Reduce energy for jump
+                if (_energy != null)
+                    _energy.ReduceEnergy(5f);
             }
         }
 
@@ -168,8 +190,8 @@ namespace Inputs
 
         public bool IsJumpButtonDown => Input.GetKeyDown(KeyCode.W);
         public bool IsJumpButton => Input.GetKeyDown(KeyCode.W);   // if want long press jump, change this to GetKey
-        public bool IsDownButton => Input.GetKey(KeyCode.S);  // not work and not use yet
-        public bool IsInteractButton => Input.GetKeyDown(KeyCode.Space);
+        public bool IsDownButton =>  Input.GetKeyDown(KeyCode.None);  // not work and not use yet
+        public bool IsInteractButton => Input.GetKeyDown(KeyCode.E);
         public bool IsExitButton => Input.GetKeyDown(KeyCode.Escape);
     }
 
@@ -191,9 +213,9 @@ namespace Inputs
 
         public bool IsJumpButtonDown => Input.GetKeyDown(KeyCode.UpArrow);
         public bool IsJumpButton => Input.GetKeyDown(KeyCode.UpArrow);  // if want long press jump, change this to GetKey
-        public bool IsDownButton => Input.GetKey(KeyCode.DownArrow);   // not work and not use yet
-        public bool IsInteractButton => Input.GetKeyDown(KeyCode.Space);
-        public bool IsExitButton => Input.GetKeyDown(KeyCode.Return);
+        public bool IsDownButton => Input.GetKeyDown(KeyCode.None);   // not work and not use yet
+        public bool IsInteractButton => Input.GetKeyDown(KeyCode.RightShift);
+        public bool IsExitButton => Input.GetKeyDown(KeyCode.None); // no exit for player 2
     }
 }
 
@@ -203,3 +225,7 @@ namespace Inputs
 
 
 // now some item enenemy not work and not follow player 2. (not do this yet)
+
+
+
+// checkpoint should let 2 player reach it to save. (not do this yet)

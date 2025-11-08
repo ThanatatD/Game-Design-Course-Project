@@ -15,11 +15,6 @@ namespace Combat
         {
             health.TakeHit(this);
         }
-
-        public void reduceEnergy(Health health)  //same as above but no sound effect for jump energy reduce
-        {
-            health.reduceEnergy(this);
-        }
     }
 
 }
