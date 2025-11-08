@@ -46,12 +46,13 @@ namespace Combat
 
         private void OnEnable()
         {
-            OnHealthChanged?.Invoke();
+            OnHealthChanged?.Invoke();   
             OnDead += HandleOnDead;
         }
 
         private void HandleOnDead()
         {
+            GameManager.Instance.OverGame();  //
             _sharedHealth = _maxHealth;
             _anim.AppearAnim(0.4f);
         }

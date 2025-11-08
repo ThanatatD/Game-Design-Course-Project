@@ -10,7 +10,9 @@ namespace Managers
     {
         public bool IsGamePaused;
         public bool IsGameEnded;
+        public bool IsGameOvered;
         public event System.Action OnGameEnd;
+        public event System.Action OnGameOver;
         public event System.Action OnGamePaused;
         public event System.Action OnGameUnpaused;
         private void Awake()
@@ -23,6 +25,12 @@ namespace Managers
             IsGameEnded = true;
             Time.timeScale = 0f;
             OnGameEnd?.Invoke();
+        }
+        public void OverGame()
+        {
+            IsGameOvered = true;
+            Time.timeScale = 0f;
+            OnGameOver?.Invoke();
         }
         public void PauseGame()
         {

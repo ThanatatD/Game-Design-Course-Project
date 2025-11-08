@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fc94e4b0ad9a140939821fc3d5ee11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpForce: 11
+  _jumpForce: 10
   _horizontalSpeed: 5.6
 --- !u!114 &2228349935118738269
 MonoBehaviour:
@@ -197,6 +197,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _initialEnergy: 100
+  _shareDistance: 2
+  _shareAmount: 20
+  _shareCooldown: 0
 --- !u!114 &2228349935118738264
 MonoBehaviour:
   m_ObjectHideFlags: 0

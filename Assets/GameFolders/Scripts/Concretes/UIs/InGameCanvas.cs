@@ -8,16 +8,19 @@ public class InGameCanvas : MonoBehaviour
 {
     [SerializeField] GameEndPanel _gameEndPanel;
     [SerializeField] GamePausedPanel _gamePausePanel;
+    [SerializeField] GameOverPanel _gameOverPanel;
 
     private void OnEnable()
     {
         GameManager.Instance.OnGameEnd += HandleOnGameEnd;
+        GameManager.Instance.OnGameOver += HandleOnGameOver;
         GameManager.Instance.OnGamePaused += HandleOnGamePaused;
         GameManager.Instance.OnGameUnpaused += HandleOnGameUnpaused;
     }
     private void OnDisable()
     {
         GameManager.Instance.OnGameEnd -= HandleOnGameEnd;
+        GameManager.Instance.OnGameOver -= HandleOnGameOver;
         GameManager.Instance.OnGamePaused -= HandleOnGamePaused;
         GameManager.Instance.OnGameUnpaused -= HandleOnGameUnpaused;
     }
@@ -35,5 +38,10 @@ public class InGameCanvas : MonoBehaviour
     private void HandleOnGameEnd()
     {
         _gameEndPanel.gameObject.SetActive(true);
+    }
+
+    private void HandleOnGameOver()
+    {
+        _gameOverPanel.gameObject.SetActive(true);
     }
 }
