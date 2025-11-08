@@ -74,6 +74,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Managers;
+using Combat; // ✅ for PlayerEnergy reference
 
 namespace Controllers
 {
@@ -86,6 +87,9 @@ namespace Controllers
         [SerializeField] private GameObject _checkMark;
         [SerializeField] private GameObject _leverFruits;
 
+        [Header("Energy Settings")]
+        [SerializeField] private float _energyCost = 5f; // ✅ default energy cost per lever use
+
         private Animator _anim;
         private bool IsLeverOn;
         private bool CanLeverWork;
@@ -95,32 +99,32 @@ namespace Controllers
             _anim = GetComponent<Animator>();
         }
 
-        public void LeverInteraction()
+        public void LeverInteraction(GameObject player)
         {
             if (!CanLeverWork)
             {
-                TryActivateLever();
+                TryActivateLever(player);
             }
             else
             {
-                TriggerLever();
+                TriggerLever(player);
             }
         }
 
-        private void TryActivateLever()
+        private void TryActivateLever(GameObject player)
         {
             if (CheckConditions())
             {
                 CanLeverWork = true;
 
-                // Decrease fruits for all doors (you can adjust logic per door if needed)
+                // Decrease fruits
                 foreach (var door in _doors)
                 {
                     if (door != null)
                         FruitManager.Instance.DecreaseFruitNumber(door.DoorFruitType, door.DoorFruitNumber);
                 }
 
-                TriggerLever();
+                TriggerLever(player);
 
                 if (_checkMark != null)
                     _checkMark.SetActive(true);
@@ -134,10 +138,32 @@ namespace Controllers
             }
         }
 
-        private void TriggerLever()
+        private void TriggerLever(GameObject player)
         {
+            // ✅ Get player's energy
+            var energy = player.GetComponent<Energy>();
+            if (energy == null)
+            {
+                Debug.LogWarning($"{player.name} has no Energy component — cannot use lever.");
+                return;
+            }
+
+            // ✅ Check if enough energy
+            if (energy.CurrentEnergy < _energyCost)
+            {
+                Debug.Log($"{player.name} does not have enough energy to activate lever.");
+                SoundManager.Instance.PlaySound(7); // fail sound
+                return;
+            }
+
+            // ✅ Reduce energy
+            energy.ReduceEnergy(_energyCost);
+            Debug.Log($"{player.name} used {_energyCost} energy to activate lever.");
+
+            // ✅ Sound for successful activation
             SoundManager.Instance.PlaySound(6);
 
+            // ✅ Toggle lever state
             if (IsLeverOn)
                 LeverOff();
             else

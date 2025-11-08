@@ -21,7 +21,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 73d8433313d6a8b45a6c7018325dbb6e, type: 2}
+  m_Motion: {fileID: 7400000, guid: a539a85f09a1d174b9addd58cf34e5b9, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -58,7 +58,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Door
+  m_Name: End Door
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: IsOpen
@@ -119,7 +119,7 @@ AnimatorStateMachine:
     m_Position: {x: 280, y: 120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6552691540467721998}
-    m_Position: {x: 280, y: 10, z: 0}
+    m_Position: {x: 280, y: 30, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8723833890863158401}
     m_Position: {x: 280, y: 220, z: 0}
@@ -179,7 +179,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: be82aef8871b1e841993c962dbe654be, type: 2}
+  m_Motion: {fileID: 7400000, guid: 99afd0df20f902c49ab059b5f06efa43, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -206,7 +206,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 3019ecec02f441c46b1079062273c235, type: 2}
+  m_Motion: {fileID: 7400000, guid: f88e2a5fd5807224aae6ae937ee6336f, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

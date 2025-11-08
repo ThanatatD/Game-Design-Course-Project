@@ -368,6 +368,7 @@ namespace Combat
             if (_currentEnergy < amount)
             {
                 Debug.Log($"{name}: Not enough energy to share!");
+                SoundManager.Instance.PlaySound(7);
                 return false;
             }
 
@@ -375,6 +376,7 @@ namespace Combat
             if (other._currentEnergy >= 100f)
             {
                 Debug.Log($"{other.name} already has >=100 energy! Cannot transfer.");
+                SoundManager.Instance.PlaySound(7);
                 return false;
             }
 
