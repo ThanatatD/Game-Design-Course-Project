@@ -354,6 +354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2228349935736158058, guid: 61f15fd1a44214348807bbdfb33edb52, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12764,6 +12768,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.099044085
       objectReference: {fileID: 0}
+    - target: {fileID: 2228349935736158058, guid: 61f15fd1a44214348807bbdfb33edb52, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17762,7 +17770,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4033263654450577537, guid: ef5cd9a945792d44f964e1dae5f6adce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.84
+      value: 6.66
       objectReference: {fileID: 0}
     - target: {fileID: 4033263654450577537, guid: ef5cd9a945792d44f964e1dae5f6adce, type: 3}
       propertyPath: m_LocalPosition.y
