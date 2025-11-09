@@ -6,8 +6,8 @@ using UnityEngine;
 public class TargetDetection : MonoBehaviour
 {
     [SerializeField] Transform _target;
-    [SerializeField][Range(3, 10)] float _detectRange;
-    [SerializeField][Range(3, 20)] float _actionRange;
+    [SerializeField][Range(3, 10)] float _detectRange; 
+    [SerializeField][Range(3, 20)] float _actionRange;  
     float _maxDistance;
    
 
