@@ -316,7 +316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2228349935118744741, guid: 61f15fd1a44214348807bbdfb33edb52, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.4
+      value: -3.3999996
       objectReference: {fileID: 0}
     - target: {fileID: 2228349935118744741, guid: 61f15fd1a44214348807bbdfb33edb52, type: 3}
       propertyPath: m_LocalPosition.z
@@ -501,7 +501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6201954810290743285, guid: 3444eeac04e582d4e808edfed6f2bc7c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.043219
+      value: 23.543219
       objectReference: {fileID: 0}
     - target: {fileID: 6201954810290743285, guid: 3444eeac04e582d4e808edfed6f2bc7c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -537,7 +537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6201954810290743286, guid: 3444eeac04e582d4e808edfed6f2bc7c, type: 3}
       propertyPath: _length
-      value: 4.25
+      value: 5.25
       objectReference: {fileID: 0}
     - target: {fileID: 6201954810290743286, guid: 3444eeac04e582d4e808edfed6f2bc7c, type: 3}
       propertyPath: _moveSpeed
@@ -12110,7 +12110,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2292772430008103339, guid: fdc08d374528c7247ac0800634c3efb3, type: 3}
       propertyPath: _energyValue
-      value: 50
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7455191686395978481, guid: fdc08d374528c7247ac0800634c3efb3, type: 3}
       propertyPath: m_Name
@@ -12326,7 +12326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8650251313921265948, guid: 4f0bab9723f4a2c488ff8f54427d2630, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2
+      value: 0.049999997
       objectReference: {fileID: 0}
     - target: {fileID: 8650251313921265948, guid: 4f0bab9723f4a2c488ff8f54427d2630, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12648,7 +12648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2228349935118744741, guid: 61f15fd1a44214348807bbdfb33edb52, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.4
+      value: -3.3999996
       objectReference: {fileID: 0}
     - target: {fileID: 2228349935118744741, guid: 61f15fd1a44214348807bbdfb33edb52, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12841,6 +12841,10 @@ PrefabInstance:
       propertyPath: _door
       value: 
       objectReference: {fileID: 1549472210}
+    - target: {fileID: 941747479654062626, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
+      propertyPath: _energyCost
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 941747479654062626, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: _doors.Array.size
       value: 2
@@ -15818,7 +15822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8650251313921265946, guid: 4f0bab9723f4a2c488ff8f54427d2630, type: 3}
       propertyPath: m_Mass
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8650251313921265947, guid: 4f0bab9723f4a2c488ff8f54427d2630, type: 3}
       propertyPath: m_Offset.y
@@ -15830,15 +15834,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8650251313921265948, guid: 4f0bab9723f4a2c488ff8f54427d2630, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.1
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 8650251313921265948, guid: 4f0bab9723f4a2c488ff8f54427d2630, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.1
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 8650251313921265948, guid: 4f0bab9723f4a2c488ff8f54427d2630, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.1
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 8650251313921265948, guid: 4f0bab9723f4a2c488ff8f54427d2630, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16353,7 +16357,7 @@ Transform:
   m_GameObject: {fileID: 1048878016}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.32291, y: -3.15, z: 0.14681175}
+  m_LocalPosition: {x: -8.4, y: -3.15, z: 0.14681175}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16405,7 +16409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5856422514961853146, guid: 97332725e1c9d544db02e3efe0053527, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.099999666
+      value: 0.10000014
       objectReference: {fileID: 0}
     - target: {fileID: 5856422514961853146, guid: 97332725e1c9d544db02e3efe0053527, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16461,6 +16465,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1767366441, guid: be1f6c2342cf00a46b837dc5918665a8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 538678567329003274, guid: be1f6c2342cf00a46b837dc5918665a8, type: 3}
       propertyPath: _playerEnergy
       value: 
@@ -16861,7 +16869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4395908317790086675, guid: 94b278770d6966047a7e939656859953, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.099999666
+      value: 0.10000014
       objectReference: {fileID: 0}
     - target: {fileID: 4395908317790086675, guid: 94b278770d6966047a7e939656859953, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17063,7 +17071,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2292772430008103339, guid: fdc08d374528c7247ac0800634c3efb3, type: 3}
       propertyPath: _energyValue
-      value: 50
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7455191686395978481, guid: fdc08d374528c7247ac0800634c3efb3, type: 3}
       propertyPath: m_Name
@@ -17129,7 +17137,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2292772430008103339, guid: fdc08d374528c7247ac0800634c3efb3, type: 3}
       propertyPath: _energyValue
-      value: 150
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7455191686395978481, guid: fdc08d374528c7247ac0800634c3efb3, type: 3}
       propertyPath: m_Name
@@ -18484,7 +18492,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2292772430008103339, guid: fdc08d374528c7247ac0800634c3efb3, type: 3}
       propertyPath: _energyValue
-      value: 50
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7455191686395978481, guid: fdc08d374528c7247ac0800634c3efb3, type: 3}
       propertyPath: m_Name
@@ -18786,6 +18794,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2043262968}
     - target: {fileID: 941747479654062626, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
+      propertyPath: _energyCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 941747479654062626, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: _doors.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -18816,7 +18828,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2292772430008103339, guid: fdc08d374528c7247ac0800634c3efb3, type: 3}
       propertyPath: _energyValue
-      value: 50
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7455191686395978481, guid: fdc08d374528c7247ac0800634c3efb3, type: 3}
       propertyPath: m_Name
@@ -19536,6 +19548,10 @@ PrefabInstance:
     - target: {fileID: 7271019006820823872, guid: 5304859f77f26ef4f9a75debe0064305, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7271019006820823875, guid: 5304859f77f26ef4f9a75debe0064305, type: 3}
+      propertyPath: _energyCost
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7271019006820823875, guid: 5304859f77f26ef4f9a75debe0064305, type: 3}
       propertyPath: _doors.Array.size

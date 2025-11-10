@@ -1,8 +1,10 @@
 using Abstracts;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Combat;
 
 namespace Managers
 {
@@ -51,12 +53,15 @@ namespace Managers
         
         public void RestartGame()
         {
+            UnityEngine.Debug.Log("Restart Game...");
+            Health.ResetHealth();
             LoadSceneFromIndex(0);
         }
 
         public void ExitGame()
         {
-            Debug.Log("Exit");
+            UnityEngine.Debug.Log("Exit Game...");
+
             Application.Quit();
         }
         public void LoadSceneFromIndex(int sceneIndex = 0)
@@ -69,7 +74,7 @@ namespace Managers
             ResetGame();
             StartCoroutine(LoadSceneAsync(sceneIndex));
         }
-        private void ResetGame()
+        public void ResetGame()
         {
             SoundManager.Instance.StopAllSounds();
             SoundManager.Instance.PlaySound(3);

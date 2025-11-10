@@ -57,6 +57,15 @@ namespace Combat
             _anim.AppearAnim(0.4f);
         }
 
+        public static void ResetHealth()
+        {
+            _sharedHealth = _allPlayers[0]._maxHealth;
+            foreach (var player in _allPlayers)
+            {
+                player.OnHealthChanged?.Invoke();
+            }
+        }
+
         public void TakeHit(Damage damage)
         {
             if (_isInvulnerable) return;
@@ -80,6 +89,7 @@ namespace Combat
                     player.OnDead?.Invoke();
             }
         }
+
 
         IEnumerator HitCooldown()
         {

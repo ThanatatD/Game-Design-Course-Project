@@ -133,7 +133,7 @@ namespace Controllers
 
                 // Reduce energy for jump
                 if (_energy != null)
-                    _energy.ReduceEnergy(5f);
+                    _energy.ReduceEnergy(2f);
             }
         }
 
