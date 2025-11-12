@@ -15808,6 +15808,22 @@ PrefabInstance:
       propertyPath: _players.Array.data[1]
       value: 
       objectReference: {fileID: 778816820}
+    - target: {fileID: 2596887097316545771, guid: be1f6c2342cf00a46b837dc5918665a8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0e163a27a895f114597305f5cb2bc43f, type: 3}
+    - target: {fileID: 2596887097316545771, guid: be1f6c2342cf00a46b837dc5918665a8, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596887097316545771, guid: be1f6c2342cf00a46b837dc5918665a8, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596887097316545771, guid: be1f6c2342cf00a46b837dc5918665a8, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2949507487242623872, guid: be1f6c2342cf00a46b837dc5918665a8, type: 3}
       propertyPath: _playerEnergy
       value: 
@@ -15935,6 +15951,22 @@ PrefabInstance:
     - target: {fileID: 5008161603077847291, guid: be1f6c2342cf00a46b837dc5918665a8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6140863946474178098, guid: be1f6c2342cf00a46b837dc5918665a8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 71.0968
+      objectReference: {fileID: 0}
+    - target: {fileID: 6140863946474178098, guid: be1f6c2342cf00a46b837dc5918665a8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 74.6294
+      objectReference: {fileID: 0}
+    - target: {fileID: 6140863946474178098, guid: be1f6c2342cf00a46b837dc5918665a8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -279.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6140863946474178098, guid: be1f6c2342cf00a46b837dc5918665a8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -5.4999
       objectReference: {fileID: 0}
     - target: {fileID: 6193502021605326557, guid: be1f6c2342cf00a46b837dc5918665a8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -17986,11 +18018,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 941747479654062625, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -26.91283
+      value: -17.66283
       objectReference: {fileID: 0}
     - target: {fileID: 941747479654062625, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.6557164
+      value: -7.363
       objectReference: {fileID: 0}
     - target: {fileID: 941747479654062625, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18038,7 +18070,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 941747479654062626, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: _doors.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 941747479654062626, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: _doors.Array.data[0]
@@ -19232,6 +19264,10 @@ PrefabInstance:
       propertyPath: _doorFruitNumber
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1255531699460682028, guid: 5a7c70cbea57e6440949dddd5b656664, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 01e883056be5b0c418543963ea360805, type: 2}
     - target: {fileID: 5071690005383955351, guid: 5a7c70cbea57e6440949dddd5b656664, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.55

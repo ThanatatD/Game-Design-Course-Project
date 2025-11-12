@@ -17487,7 +17487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8619903048367848526, guid: e8b7fdd89cc376e4db30d9e7b2c78d53, type: 3}
       propertyPath: m_Name
-      value: Banana (1)
+      value: key (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18013,7 +18013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8619903048367848526, guid: e8b7fdd89cc376e4db30d9e7b2c78d53, type: 3}
       propertyPath: m_Name
-      value: Banana
+      value: key
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8619903048367848520}
   - component: {fileID: 8619903048367848527}
   m_Layer: 0
-  m_Name: Banana
+  m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,7 +58,7 @@ Animator:
   m_GameObject: {fileID: 8619903048367848526}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ace99356386c3f44b8269a04294d555d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 11f25360de2db4244b3f57eda214184a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -110,7 +110,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5728686177044832811, guid: b1f24b3bc2e2f1d4b858657ad5c115a0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e163a27a895f114597305f5cb2bc43f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -153,6 +153,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0166412, y: 0.0797714}
+  m_Offset: {x: -0.0166412, y: 0.031084716}
   serializedVersion: 2
-  m_Radius: 0.43547535
+  m_Radius: 0.48416203
