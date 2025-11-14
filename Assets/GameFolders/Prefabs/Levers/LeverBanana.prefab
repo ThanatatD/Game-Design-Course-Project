@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8289872736115182310}
   - component: {fileID: 4726083135698693406}
   m_Layer: 0
-  m_Name: Banana
+  m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24,14 +24,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4260944646793038813}
-  m_LocalRotation: {x: 0, y: 0, z: 0.15255454, w: 0.988295}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
   m_LocalPosition: {x: -0.71, y: 0.29, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1794826900673148246}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 17.55}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
 --- !u!212 &4726083135698693406
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: -5728686177044832811, guid: b1f24b3bc2e2f1d4b858657ad5c115a0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e163a27a895f114597305f5cb2bc43f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1794826900673148246}
   m_Layer: 6
-  m_Name: Bananas
+  m_Name: Keys
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,6 +107,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5944138109829519581}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -115,7 +116,6 @@ Transform:
   - {fileID: 8289872736115182310}
   - {fileID: 6972094715971037743}
   m_Father: {fileID: 7271019006820823872}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6752753090832234498
 GameObject:
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 6972094715971037743}
   - component: {fileID: 4378139184706523158}
   m_Layer: 0
-  m_Name: Banana2
+  m_Name: Key2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -141,14 +141,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6752753090832234498}
-  m_LocalRotation: {x: 0, y: 0, z: -0.15255454, w: 0.988295}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0.73, y: 0.29, z: -1.9}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1794826900673148246}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -17.55}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
 --- !u!212 &4378139184706523158
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -190,7 +190,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: -5728686177044832811, guid: b1f24b3bc2e2f1d4b858657ad5c115a0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e163a27a895f114597305f5cb2bc43f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -206,6 +206,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 941747479654062625, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
@@ -214,15 +215,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 941747479654062625, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -25.63
       objectReference: {fileID: 0}
     - target: {fileID: 941747479654062625, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 14.64
       objectReference: {fileID: 0}
     - target: {fileID: 941747479654062625, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.19294664
       objectReference: {fileID: 0}
     - target: {fileID: 941747479654062625, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -230,15 +231,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 941747479654062625, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 941747479654062625, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 941747479654062625, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 941747479654062625, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -253,9 +254,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 941747479654062626, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
+      propertyPath: _energyCost
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 941747479654062626, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: _leverFruits
       value: 
       objectReference: {fileID: 5944138109829519581}
+    - target: {fileID: 941747479654062626, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
+      propertyPath: _doors.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 941747479654062638, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: m_Name
       value: LeverBanana
@@ -265,6 +274,12 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 941747479654062625, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1794826900673148246}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
 --- !u!4 &7271019006820823872 stripped
 Transform:
