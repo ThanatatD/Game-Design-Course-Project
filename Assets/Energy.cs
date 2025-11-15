@@ -267,6 +267,7 @@ namespace Combat
         private float _currentEnergy;
         private bool _isOutOfEnergy;
         private bool _canShare = true;
+        private static int playersOutOfEnergy = 0;
 
         public float CurrentEnergy => _currentEnergy;
         public bool IsOutOfEnergy => _isOutOfEnergy;
@@ -305,6 +306,10 @@ namespace Combat
             _isOutOfEnergy = true;
             if (_movement != null)
                 _movement.CanAcceptInput = false;
+
+            playersOutOfEnergy++;
+
+            TryGameOverCheck();
         }
 
         private void HandleEnergyChanged()
@@ -314,6 +319,19 @@ namespace Combat
                 _isOutOfEnergy = false;
                 if (_movement != null)
                     _movement.CanAcceptInput = true;
+
+                playersOutOfEnergy--;
+            }
+        }
+
+        private void TryGameOverCheck()
+        {
+            int totalPlayers = GameObject.FindGameObjectsWithTag("Player").Length;
+
+            if (playersOutOfEnergy >= totalPlayers && totalPlayers > 0)
+            {
+                Debug.Log("Both players out of energy → GAME OVER");
+                GameManager.Instance.OverGame();
             }
         }
 
