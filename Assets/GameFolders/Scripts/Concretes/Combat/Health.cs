@@ -52,7 +52,7 @@ namespace Combat
 
         private void HandleOnDead()
         {
-            GameManager.Instance.OverGame();  //
+            //GameManager.Instance.OverGame();  // if want to show gameover, but checkpoint will not work (also if have checkpoint, map will not reset)
             _sharedHealth = _maxHealth;
             _anim.AppearAnim(0.4f);
         }

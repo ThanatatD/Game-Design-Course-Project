@@ -127,13 +127,16 @@ namespace Controllers
 
             if (_isJumped)
             {
-                SoundManager.Instance.PlaySound(0);
-                _rb.Jump();
-                _isJumped = false;
+                // Check if enough energy to jump
+                if (_energy != null && _energy.CurrentEnergy >= 3f)
+                {
+                    SoundManager.Instance.PlaySound(0);
+                    _rb.Jump();
 
-                // Reduce energy for jump
-                if (_energy != null)
-                    _energy.ReduceEnergy(2f);
+                    _energy.ReduceEnergy(3f);
+                }
+
+                _isJumped = false;
             }
         }
 

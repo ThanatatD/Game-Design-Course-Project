@@ -255,7 +255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 941747479654062626, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: _energyCost
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 941747479654062626, guid: 7c5446c92f916114489c1f5dcb118af4, type: 3}
       propertyPath: _leverFruits
