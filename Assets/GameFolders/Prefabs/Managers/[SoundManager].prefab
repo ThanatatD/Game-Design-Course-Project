@@ -957,7 +957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fadeSpeed: 2
-  _masterVolume: 0.3
+  _masterVolume: 0.2
 --- !u!1 &492104651198280860
 GameObject:
   m_ObjectHideFlags: 0
