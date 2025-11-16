@@ -26703,6 +26703,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[SoundManager]'
       objectReference: {fileID: 0}
+    - target: {fileID: 492104651069647422, guid: 28bf2a9b98587ef4c8df8d82e0d5efdd, type: 3}
+      propertyPath: _masterVolume
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 492104651069647423, guid: 28bf2a9b98587ef4c8df8d82e0d5efdd, type: 3}
       propertyPath: m_RootOrder
       value: 22
