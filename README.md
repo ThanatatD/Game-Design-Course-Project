@@ -6,7 +6,8 @@ This is **not a commercial release** and currently includes **only 2 playable le
 The goal is simple: **work together, solve puzzles, avoid getting frustrated, and reach the trophy together!**
 
 👉 **Build Download (GAME):**  
-https://drive.google.com/drive/folders/1GNmPBEo7xdbjhXQQ3KRe98cAm3PTydH6?usp=sharing
+https://drive.google.com/drive/folders/1GNmPBEo7xdbjhXQQ3KRe98cAm3PTydH6?usp=sharing  
+*(Download the entire folder and run **MumboJumboAdventure.exe** to play!)*
 
 ---
 
