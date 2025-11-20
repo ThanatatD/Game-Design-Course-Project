@@ -197,8 +197,12 @@ PrefabInstance:
       value: OneWay_M (8)
       objectReference: {fileID: 0}
     - target: {fileID: 4925050718070630653, guid: f5f6486dde62ef84a8af8d22924a02df, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4925050718070630653, guid: f5f6486dde62ef84a8af8d22924a02df, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.2766294
+      value: 4.7766294
       objectReference: {fileID: 0}
     - target: {fileID: 4925050718070630653, guid: f5f6486dde62ef84a8af8d22924a02df, type: 3}
       propertyPath: m_LocalPosition.y
@@ -29162,7 +29166,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8619903048367848523, guid: e8b7fdd89cc376e4db30d9e7b2c78d53, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.085482
+      value: 16.94
       objectReference: {fileID: 0}
     - target: {fileID: 8619903048367848523, guid: e8b7fdd89cc376e4db30d9e7b2c78d53, type: 3}
       propertyPath: m_LocalPosition.y
